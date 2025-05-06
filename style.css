@@ -1,0 +1,166 @@
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    padding: 30px 24px 30px 24px;
+    margin: 50px auto;
+    color: #3A59D1;
+    box-shadow: 0px 4px 4px gainsboro;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+input, select{
+    border: 2px solid gainsboro;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px auto 5px auto;
+}
+select{
+    color: #3D90D7;
+    cursor: pointer;
+    width: 100%;
+}
+input{
+    width: 86%;
+}
+input::placeholder{
+    color: #3D90D7;
+}
+
+.input-icon {
+    position: relative;
+}
+.input-icon svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.input-icon #warning-symbol{
+    position: absolute;
+    left: 90%;
+    top: 47%;
+}
+.input-icon input {
+    padding-left: 35px; 
+}
+.input-icon select{
+    padding-left: 30px; 
+}
+input:hover, input:focus,
+select:hover, select:focus{
+    border-color: #3A59D1;
+    outline: none;
+}
+.password-check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+
+.questions{
+    margin-bottom: 10px;
+}
+.development, .skills{
+    margin: 7px auto;
+}
+.development label, .skills label{
+    background-color: white;
+    border: 2px solid gainsboro;
+    font-size: 16px;
+    color: #3D90D7;
+}
+p{
+    margin: 4px;
+}
+button{
+    border-radius: 3px;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.option{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: #3D90D7;
+    cursor: pointer;
+}
+input[type="radio"]:checked,
+input[type="checkbox"]:checked{
+    fill: #1e3a8a;
+}
+
+
+.send{
+    border-radius: 3px;
+    border: 1px solid #3A59D1;
+    background-color: #3A59D1;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    font-size: 18px;
+}
+
+.option:hover, button:hover{
+    border-color: #3A59D1;
+    box-shadow: 0px 4px 8px gainsboro;
+}
+
+
+#password.error{
+    border-color: red !important;
+}
+small.error{
+    color: red !important;
+}
+#key-svg.error{
+    fill: red !important;
+}
+#strength-bar.error{
+    width:70px;
+    height: 5px;
+    background-color: red;
+}
+
+#password.warning{
+    border-color: #F3C623 !important;
+}
+small.warning{
+    color: #F3C623 !important;
+}
+#key-svg.warning{
+    fill: #F3C623 !important;
+}
+#strength-bar.warning{
+    width:70px;
+    height: 5px;
+    background-color: #F3C623;
+}
+
+#password.correct{
+    border-color: green !important;
+}
+small.correct{
+    color: green !important;
+}
+#key-svg.correct{
+    fill: green !important;
+}
+#strength-bar.correct{
+    width:70px;
+    height: 5px;
+    background-color: green;
+}
